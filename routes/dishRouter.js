@@ -4,11 +4,11 @@ const dishRouter = express.Router();
 
 
 dishRouter.get("/", (req, res) => {
-  res.send("Will send all the dishes to you!");
+  res.send("All the dishes will be sent to you");
 });
 
 dishRouter.get("/:dishId", (req, res) => {
-  res.send(`Will send the dish of dish Id : ${req.params.dishId}`);
+  res.send(`Sending the dish of dish Id : ${req.params.dishId}`);
 });
 
 
@@ -34,11 +34,11 @@ dishRouter.put("/", (req, res) => {
 });
 
 dishRouter.delete("/", (req, res) => {
-  res.send(`Will Delete All Dishes`);
+  res.send(`All the dishes will be deleted`);
 });
 
 dishRouter.delete("/:dishId", (req, res) => {
-  res.send(`Will Delete the dish by Id : ${req.params.dishId}`);
+  res.send(`Deleting the dish by Id : ${req.params.dishId}`);
 });
 
 module.exports = dishRouter;
