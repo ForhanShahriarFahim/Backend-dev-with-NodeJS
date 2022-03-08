@@ -32,7 +32,7 @@ promoRouter.put("/:promoId", (req, res) => {
 });
 
 promoRouter.put("/", (req, res) => {
-  res.status(403).send(`put request not supported on /promotions`);
+  res.status(403).send(`put request is not supported on /promotions`);
 });
 
 promoRouter.delete("/", (req, res) => {

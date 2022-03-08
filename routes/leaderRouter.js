@@ -25,8 +25,7 @@ leaderRouter.post("/:leaderId", (req, res) => {
 
 leaderRouter.put("/:leaderId", (req, res) => {
   res.write(`Updating the leader: ${req.params.leaderId}`);
-  res.end(
-    `Leader: ${req.body.name} with details: ${req.body.description}`
+  res.end(`Leader: ${req.body.name} with details: ${req.body.description}`
   );
 });
 
