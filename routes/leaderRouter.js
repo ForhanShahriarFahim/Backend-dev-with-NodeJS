@@ -1,10 +1,9 @@
 const express = require("express");
 
-
 const leaderRouter = express.Router();
 
 leaderRouter.get("/", (req, res) => {
-  res.send(`will send all leaders`);
+  res.send(`All the leaders will be sent to you`);
 });
 
 leaderRouter.get("/:leaderId", (req, res) => {
@@ -34,11 +33,11 @@ leaderRouter.put("/", (req, res) => {
 });
 
 leaderRouter.delete("/", (req, res) => {
-  res.send(`will delete all leaders`);
+  res.send(`All the leaders will be deleted`);
 });
 
 leaderRouter.delete("/:leaderId", (req, res) => {
-  res.send(`will delete the leader of id: ${req.params.leaderId}`);
+  res.send(`Deleting the leader of id: ${req.params.leaderId}`);
 });
 
 module.exports = leaderRouter;
